@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "..\\helloworld"
+		},
+		{
+			"path": "..\\Web"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp"
+		}
+	}
+}

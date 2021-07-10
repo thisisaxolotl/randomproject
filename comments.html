@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Additional Comments</title>
+        <link rel="stylesheet" href=websystems.css>
+        <meta name="viewport" content= "width=device-width, initial-scale = 1.0, maximum-scale:1.0,user-scalable:0">
+    </head>
+ 
+    <body class='body'>
+    
+          
+    
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" id="nightmode"> Night Mode</label>
+
+
+
+        
+            <div class= "index2">
+                <div>MENU</div>
+                <a href= "index.html" > Home Page<br></a>
+                <a href= "past.html"> Past<br></a>
+                <a href= "future.html"> Future<br></a>
+                <a href= "comments.html"> Comments<br></a> 
+            </div>
+           <div class="header"> COMMENTS</div>
+           <div class= "index">
+            <a href= "index.html"> Home Page</a>
+            <a href= "past.html"> Past</a>
+            <a href= "future.html"> Future</a>
+            <a href= "comments.html"> Comments</a>
+          </div>
+          <div class="headerbox"></div>
+   
+     
+        <a id=invisibleanchor></a>
+        <div class="bigsquare"></div>
+        <div class="title6"> Table of contents</div>
+      
+            <a href="#invisibleanchor"><img src="backtotop.png" alt="arrow pointing to the top" class='top'> </a>
+        <div class="rectangle6"></div>
+        <ol class='indexlist'>
+            <li> <a href="#overall"> Overall</a></li><br>
+            <li>  <a href="#tech"> Technical Aspects</a></li><br>
+            <li> <a href='#aesthetics'> Aesthetics</a></li><br>
+            <li> <a href="#access"> Accessiblity</a></li>
+        </ol>
+        <a id="overall"> Overall</a>
+            <p class="paragraph1"> This is my first website design ever as well as my first interaction with HTML/CSS. So it is safe to say that this web page has many flaws and unfulfilled potentials
+                , due to the limitations of my knowledge. There are many features I want to add but the codings required are outside my range of understanding, so stuffing them would just be plagiriasm. <br>
+                However, this website is still functional and I am very proud of what I've done. <br><br>
+             Overview of this website:</p>
+          
+            <table class="table">
+                <tr>
+                    <th> Page Name</th>
+                    <th> Description</th>
+                </tr>
+                <tr>
+                    <td> Home Page</td>
+                    <td> This page introduces some information about me, what I do in my free time and my favborite video games.</td>
+                </tr>
+                <tr>
+                    <td> Past</td>
+                    <td> This page introduces my past in the form of related questions. The answer can be seen by hovering over the question</td>
+                </tr>
+                <tr>
+                    <td> Future</td>
+                    <td> This page introduces my future ambitions, what I want to do and how I will achieve them.</td>
+                </tr>
+                <tr>
+                    <td> Comments</td>
+                    <td> This page elaborates on my intentions with the website and the technical/ aesthetic aspects</td>
+                </tr>
+            </table>
+        </p>
+          
+        <a id="tech"> Technical Aspects</a>
+            <div class="paragraph2">
+        
+                <span class="fonttype"> File Structure:</span> <br>
+                <p>  There are five main files: </p>
+                <ol>
+                    <li> index.html: </li>
+                    <p> This is the main homepage of the website. It has three parts namely "About me", "My Arts" and "My Favorite Games". The main feature of this page is its 'hover gallery'. There are 6 images here, the first three are my favorite artworks which will enlarge if hovered over. The last three are my most played games, when hovered will show their titles. </p>
+                    <li> past.html</li>
+                    <p> This html file is for my past. The page is structered with four question boxes about my history with programming. When hovered over, they will reveal the answer to the related question.</p>
+                    <li> future.html</li>
+                    <p> This html file shows my future. It is split into two parts, answering these questions respectively: " What are my goals?" and "How will I achieve them". All of which are relevant to this course and to my journey here at UTS.</p>
+                    <li>comments.html</li>
+                    <p> This html file is equipped with an index table to help the user navigate around. There are four main aspects that will be coverd here: "Overall", "Technical Aspects", "Aesthetics" and "Accessibility". All of which are crucial to the foundation of a good website. It also includes a "back-to-top" arrow, linking the image to an invisible anchor at the top of the page.</p>
+                    <li> websystems.css</li>
+                    <p> This css file includes everything that styles the web page, from positioning, fonts, colors and any feature used in this website.</p>
+                </ol>
+                <span class="fonttype"> Night Mode:</span>
+               
+                <div> <br> One of my most proud feature is the implementation of Night Mode, a switch to "cut off" the light of your webpage, easing the pressure on the viewers' eyes (see more in <a href='#access'>Accessibility</a>).<br>
+                This is done using the "<span class='fonttype'>input</span>" element with a type of "<span class='fonttype'>checkbox</span>". This will read in the user's click on the box and toggle between the checked/unchecked stage, and the rest is just a matter of changing the pages'
+                    appearance using different combinators.<br>I did this with only CSS properties. It was such an unrealisitc idea at the point that the class I use is called .crazy, and I don't plan on changing that, thinking it is a nice reminder of my progress.<br>
+                </div>
+                <br>
+                <span class="fonttype"> Page Layout:</span>
+                <div>
+                    The page is designed in a Header - Body - Footer format.
+                    <img src="content.png" alt="layout of the web page" id="imgstyle10">
+                     <ol>
+                         <li>Header</li>
+                         <p> The header consists of an navigation table to navigate between pages using .index class, as well as the name of the page you're currently on.<br>When viewed on smaller devices, the table will shrink into "Menu" and will expand into the navigation table when being hovered on
+                         . This is done by creating an invisible .index2 class, which will appear when .index disappears at a certain screen size. </p>
+                         <li>Body</li>
+                         <p> The body is where the main content takes place, this varies between pages. The body usually contains the title of the section and the content within it. There are also decorative boxes that use an absolute position, as well as other elements with a fixed position (this can been seen on Home Page and Past) to frame the page.</p>
+                         <li>Footer</li>
+                         <p> The footer is where additional information can be found, including the course name and the university that I'm enrolling in.</p>
+                    </ol>
+
+                </div>
+
+                <span class="fonttype"> CSS selectors:</span>
+                <table class="table2">
+                    <tr>
+                        <th> Name</th>
+                        <th> Type</th>
+                        <th>Purpose</th>
+                    </tr>
+                    <tr>
+                        <td> html</td>
+                        <td> Element</td>
+                        <td> Sets the background, and various sizing elements for the website</td>
+                    </tr>
+                    <tr>
+                        <td> .header,.footer</td>
+                        <td> Class</td>
+                        <td> Sets up styles (fonts, size, color, background) and positions header and footer elements</td>
+                    </tr>
+                    <tr>
+                        <td> .title</td>
+                        <td> Class</td>
+                        <td> Sets up styles (fonts, size, color) and positions the titles</td>
+                    </tr>
+                    <tr>
+                        <td> .content</td>
+                        <td> Class</td>
+                        <td> Sets up the paragraphs in a website, usually done with a "span" tag
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #imgstyle</td>
+                        <td> ID</td>
+                        <td> Sets up images used in the website, including positioning, size, scale, border and hover effects</td>
+                    </tr>
+                    <tr>
+                        <td> #table</td>
+                        <td> ID</td>
+                        <td> Forms the various table that is used in this page</td>
+                    </tr>
+                    <tr>
+                        <td> .rectangle</td>
+                        <td> Class</td>
+                        <td> 'Draws' various shapes that are used for decoration, framing and spacing the pages</td>
+                    </tr>
+                    <tr>
+                        <td> .index</td>
+                        <td> Class</td>
+                        <td> Create hyper links between pages, can also be seen at the top right of the screen</td>
+                    </tr>
+                    <tr>
+                        <td> .index2</td>
+                        <td> Class</td>
+                        <td> A substitude for .index, is only used when the screen reaches a certain size</td>
+                    </tr>
+                    <tr>
+                        <td> #checkbox</td>
+                        <td> ID</td>
+                        <td> A checkbox to toggle between regular/night mode. More about this in the next section </td>
+                    </tr>
+                    <tr>  
+                        <td colspan="3">
+                        There are also variables of the mentioned selectors(#imgstyle2, .title2, .rectangle2, etc) to fit any specific purposes.<br>
+                        The use of <span class="fonttype">@font-face</span> and<span class="fonttype"> @media </span>is also included, in order to add custom fonts and make the website responsive to different screens.
+                    </td>
+                </tr>
+                </table>
+                <br>
+            </div>
+          
+
+        <a id="aesthetics">Aesthetics</a>
+        <div class='paragraph3'>
+            <div> <span class="fonttype"> Overview</span></div>
+            <p>This web page is designed with the users' interest in mind. It follows a minimalistic style, keeping it clean and easy to look at. Meanwhile the chosen colors, fonts and layout of the page create a luxury feeling, the intention is to make sure the viewers have a sense of satisfaction upon entering this site. <br>
+                Moreover, the interactivity of this website makes sure the users don't feel bored after repeated visits, keeping it fresh every time the website is opened.
+            </p>   
+            <div> <span class="fonttype"> Colors</span></div>
+            <img src="colorpalettes.png" alt="palette of color: red, gold and blue" id='imgstyle11'>
+            <p>This web page uses a mixture of red, gold and blue at different shades so they blend together. Keeping in touch with the theme, red and gold symbolize nobility, and the blue is thrown in to create a satisfying contrast to hightlight certain areas. <br>
+            Each of the main color all has its specific purpose in the layout. Red is used for title and navigation table, usually the outermost part of the website. Gold is used for titles and framing, often at the middle of the design. And the innermost text is black, with important words/phrases highlighted in blue.
+         
+            <br> <br>The color choice also follows the simple rules of Triadic Color Schemes in Color Theory. (Image courtesy of <a href="http://99designs.com/blog/tips/the-7-step-guide-to-understanding-color-theory/"> 99Designs.com</a>)
+            <img src="Triadic-3-column.png" alt="The Triadic color schemes of Color Theory" ID="imgstyle14">  
+        </p>
+    
+            <div> <span class="fonttype"> Fonts</span></div>
+            <p> The main fonts here are: Virtuous Slab, AnticDidone and Cronus, used for the navigation bar, title and the content respectively. These fonts aren't what people are used to, but they convey the aproach I'm going for very well. They can be read easily on different devices and have a bit more personality than the standard ones.</p>
+            <div> <span class="fonttype"> Interactivity</span></div>
+            <p> One of the most interesting parts about this website is its interaction with the user. For example, the user can hover onto the questions in the Past page and reveal their answers, creating this back and forth interaction that will surely be less boring than reading a paragraph.<br>
+            All clickable links will change color when cicked on, and the boxes will also have their color shades changed when they're hovered over by the cursor.</p>
+            <div> <span class="fonttype"> Night Mode</span></div>
+            <p>Upon clicking the night mode button, it will make the background black, the text white, as well as lightening or dampening areas where suitable.
+        <br> The colors in Night Mode are also carefully chosen, so as not to ruin the aesthetic of the page. Dark red will turn to brighter pink, while bright yellow will become more brownish so the white text can pop out
+        </p>
+        </div>
+
+
+        <a id="access">Accessiblity</a>
+        <div class="paragraph4">
+       <div> One of the most important aspects of a functional website is its accessibility, how can it cater for people of different backgrounds. <br>
+    The <a href= "https://www.w3.org/standards/webdesign/accessibility" > W3C Accessibility Guide</a>  gives useful guidelines, and this webpage follows them directly.</div> <br>
+    <div> <span class="fonttype"> Responsiveness</span></div>
+    <p> This website has a unique feature when viewed on smaller devices. It will "minimalise" itself, trimming all the unnecessary decorations. 
+        The main paragraphs and titles of course are still kept, and they have been repositioned vertically with different color choices to fit better on smaller, verticle devices ( mobile phones) .</p>
+    <p> When viewed on smaller screens, the navigation bar will also collapse into a menu button, when upon clicked on, will expand into the actual navigation bar. This feature aims to reduce text clusters when accessed on mobile phones and smaller tablets. </p>
+    <p> This website has been tested when viewed in smaller devices and on mobiles using Chrome's built-in consoles. The results came back positive, as all pages are clear and readable on all devices (see fullscreen and mobile screen comparison below). The trimming of decorations plays a major part in this.
+    </p>
+    <img src="responsiveness2.png" alt="This website when viewed on website using Chrome" id="imgstyle13">
+<img src="responsiveness.png" alt="This website when viewed on mobile phones using Chrome's console" id="imgstyle12"> <br> <br> <br> <br> <br><br> <br> <br> <br> <br>
+
+    <div> <span class="fonttype"> Screen Reader</span></div>
+    <p> Every page in this website has been tested using a <a href="https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn">screen reader extension</a> provided by Google Chrome. The program picked up every word easily and conveyed the message as clearly as possible. All pages can be understood without having to look at it, alternate texts hidden under images help describe the pictures accurately.  </p>
+
+    <span class="fonttype"> Night Mode:</span>
+    <p>As mentioned before, one of my most proud achievements working on this is the implementaion of Night Mode. When reading this website several hours a day, I find it straining on the eyes to view the white background in extended periods of time. Too bright of a background will also damage users who are short-sighted, and for those who are ocularly healthy, it will turn them short-sighted as well.<br>
+    Night Mode is added with hopes of not causing any discomfort to the user, and making sure that it can be safely accessed even in dark environments.  </p>   
+    <span class="fonttype"> Color Choice:</span>
+    <p> The main colors chosen in this have been tested for contrast using <a href="https://webaim.org/resources/contrastchecker/">Webaim.org</a> and the results came back as pass, since every color used constrasts with the white background.</p>
+    <p> The website has also been checked for the color blind using the web extension <a href="https://chrome.google.com/webstore/detail/rgblind/kjlmmjnmmlfamgddfglhaoklpjjplbhc/related"> RGBlind</a>. After applying 3 color blind filters, the website still remains relatively the same as it does without the filters.</p>
+  
+</div>
+<div class="footerrec"></div>
+<div class="footer"> MY WEB PAGE | 31266 WEB SYSTEMS |UTS</div>
+<div class="blackscreen3"></div>
+    </body>
+    
+</html>
